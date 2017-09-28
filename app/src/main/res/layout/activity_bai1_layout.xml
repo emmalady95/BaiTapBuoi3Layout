@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.emmalady.layout.Bai1LayoutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/rdGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+            <RadioButton
+                android:id="@+id/rdRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red"
+                android:textSize="20sp"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/rdWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="White"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/rdBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue"
+                android:textSize="20sp"/>
+        </RadioGroup>
+        
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_below="@+id/rdGroup"
+            android:layout_alignParentRight="true"/>
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_below="@+id/rdGroup"
+            android:layout_toLeftOf="@+id/btnNext"/>
+        <Button
+            android:id="@+id/btnSetColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set color"
+            android:layout_below="@+id/rdGroup"
+            android:layout_toLeftOf="@+id/btnClear"/>
+        <TextView
+            android:id="@+id/tvChangeColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btnSetColor"
+            android:text="Màu thay đổi"
+            android:background="#fff"/>
+    </RelativeLayout>
+
+    
+</LinearLayout>

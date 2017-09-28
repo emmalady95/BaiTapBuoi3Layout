@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.emmalady.layout.Bai4LayoutActivity"
+    android:background="#000">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:background="#2bd7ac"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 2"
+
+        android:layout_above="@+id/btn1"
+        android:layout_marginLeft="90sp"
+        android:layout_marginBottom="20sp"
+        android:textSize="14sp"
+        android:background="#eadd23"/>
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 3"
+        android:layout_toRightOf="@+id/btn1"
+        android:layout_above="@+id/btn1"
+        android:layout_marginLeft="-30sp"
+        android:layout_marginBottom="20sp"
+        android:textSize="14sp"
+        android:background="#eadd23"/>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 4"
+
+        android:layout_above="@+id/btn2"
+        android:layout_marginLeft="40sp"
+        android:layout_marginBottom="20sp"
+        android:textSize="14sp"
+        android:background="#df7f3e"/>
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 5"
+        android:layout_toRightOf="@+id/btn3"
+        android:layout_above="@+id/btn3"
+        android:layout_marginLeft="-35sp"
+        android:layout_marginBottom="20sp"
+        android:textSize="14sp"
+        android:background="#df7f3e"/>
+</RelativeLayout>
